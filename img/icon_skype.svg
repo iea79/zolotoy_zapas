@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="SvgjsSvg1014"
+   version="1.1"
+   width="17"
+   height="18"
+   viewBox="0 0 17 18"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icon_skype.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>мессенджеры-иконки</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="9.8015267"
+     inkscape:cx="65.143163"
+     inkscape:cy="9.4764782"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SvgjsSvg1014" />
+  <title
+     id="title3">мессенджеры-иконки</title>
+  <desc
+     id="desc5">Created with Avocode.</desc>
+  <defs
+     id="SvgjsDefs1015" />
+  <path
+     id="SvgjsPath1016"
+     d="m 16.173,11.3 c 0.12,-0.55 0.184,-1.13 0.184,-1.72 0,-4.41 -3.556,-8 -7.942,-8 C 7.952,1.58 7.499,1.62 7.057,1.7 6.347,1.25 5.508,0.99 4.607,0.99 c -2.543,0 -4.605,2.08 -4.605,4.64 0,0.85 0.231,1.66 0.633,2.34 -0.105,0.52 -0.161,1.06 -0.161,1.61 0,4.42 3.556,8 7.941,8 0.497,0 0.983,-0.05 1.454,-0.13 0.649,0.35 1.39,0.55 2.177,0.55 2.544,0 4.606,-2.08 4.606,-4.64 0,-0.74 -0.173,-1.44 -0.479,-2.06 z m -3.685,2.11 c -0.367,0.52 -0.91,0.93 -1.613,1.23 -0.697,0.29 -1.532,0.44 -2.482,0.44 -1.14,0 -2.097,-0.2 -2.843,-0.6 C 5.016,14.19 4.576,13.79 4.243,13.31 3.905,12.82 3.734,12.33 3.734,11.86 c 0,-0.29 0.112,-0.54 0.331,-0.75 0.218,-0.21 0.497,-0.31 0.829,-0.31 0.273,0 0.508,0.08 0.7,0.24 0.183,0.16 0.339,0.39 0.465,0.69 0.141,0.32 0.295,0.6 0.457,0.81 0.155,0.21 0.379,0.38 0.666,0.52 0.287,0.14 0.676,0.21 1.153,0.21 0.656,0 1.195,-0.14 1.6,-0.42 0.395,-0.27 0.587,-0.6 0.587,-1 0,-0.32 -0.1,-0.56 -0.306,-0.76 C 9.999,10.89 9.714,10.73 9.368,10.62 9.007,10.51 8.517,10.38 7.911,10.26 7.09,10.08 6.392,9.87 5.836,9.63 l -0.006,0 C 5.261,9.39 4.802,9.05 4.466,8.62 4.125,8.19 3.952,7.66 3.952,7.02 3.952,6.42 4.133,5.87 4.491,5.4 4.846,4.94 5.365,4.57 6.033,4.32 6.692,4.08 7.476,3.95 8.363,3.95 c 0.709,0 1.332,0.09 1.853,0.25 0.523,0.16 0.965,0.39 1.311,0.66 0.35,0.27 0.609,0.57 0.772,0.87 0.165,0.31 0.249,0.62 0.249,0.92 0,0.28 -0.11,0.54 -0.326,0.77 C 12.005,7.65 11.73,7.76 11.407,7.76 11.112,7.76 10.882,7.69 10.722,7.55 10.574,7.41 10.42,7.21 10.249,6.91 10.051,6.53 9.811,6.23 9.536,6.02 9.269,5.82 8.823,5.71 8.21,5.71 7.641,5.71 7.178,5.83 6.834,6.06 6.503,6.28 6.342,6.53 6.342,6.82 c 0,0.19 0.052,0.34 0.158,0.47 0.113,0.14 0.272,0.26 0.474,0.36 0.208,0.11 0.423,0.19 0.639,0.25 0.221,0.06 0.591,0.15 1.099,0.27 0.535,0.12 1.033,0.24 1.487,0.38 0.091,0.03 0.181,0.06 0.268,0.08 0.529,0.17 0.986,0.38 1.359,0.63 0.38,0.25 0.681,0.57 0.895,0.95 0.214,0.39 0.323,0.86 0.323,1.41 0,0.66 -0.187,1.26 -0.556,1.79 z"
+     inkscape:connector-curvature="0"
+     style="fill:#f3f6f7;fill-opacity:1"
+     sodipodi:nodetypes="csscsscsscsscccsccscscccsscsccccccsccscccscscccscsccccccccsc" />
+</svg>

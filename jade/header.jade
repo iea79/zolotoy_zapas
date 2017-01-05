@@ -1,0 +1,96 @@
+// begin header 
+header.header
+	.container_center
+
+		a.logo
+			img(src="img/logo.png")
+
+		// begin header_cart 
+		.header_cart
+			img(src="img/cart.png")
+			span 530 600 
+			span.rub P
+		// end header_cart 
+
+
+		// begin header_center 
+		.header_center
+			
+			// begin sub_title 
+			.header_sub_title Монеты: покупка и продажа
+				
+			// end sub_title 
+
+
+			// begin header_phone 
+			.header_phone
+				
+				a(href="tel: +7 499 533 08 82" class="phone") +7 499 533 08 82
+				span работаем по будням с 10 до 19
+
+			// end header_phone 
+
+
+			// begin header_support 
+			.header_support
+				// Add class btn_disable to button
+				button.btn Онлайн-консультант
+
+			// end header_support 
+
+
+		// end header_center 
+
+
+		include drop_menu.jade
+
+	// begin header_menu 
+	.header_menu
+		.container_center
+			
+			// begin navbar 
+			ul.navbar
+
+				li.navbar__item
+					a.navbar__link(href="#") Монеты и цены
+				li.navbar__item
+					a.navbar__link(href="#") Как купить / продать
+				li.navbar__item
+					a.navbar__link(href="#") Монетарный депозит
+				li.navbar__item
+					a.navbar__link(href="#") Почему золотые монеты?
+				li.navbar__item
+					a.navbar__link(href="#") Контакты
+				li.navbar__item
+					a.navbar__link.profile_link(href="#") Имя-профиля
+						i.icon_logout
+
+			// end navbar 
+
+		
+	// end header_menu 
+
+
+	// begin header_exchange 
+	.header_exchange
+		.container_center
+			ul.header_exchange_list
+				li.header_exchange_item.
+					Биржевые индексы:
+				li.header_exchange_item Золото: 1 343.00 $ +10.80
+					a.icon_arrow_up(href="#")
+				li.header_exchange_item Серебро: 20.33 $ +0.89
+					a.icon_arrow_up(href="#")
+				li.header_exchange_item Доллар США: 65.02 Р -1.02
+					a.icon_arrow_down(href="#")
+				li.header_exchange_item Евро: 71.05 Р -0.16
+					a.icon_arrow_down(href="#")
+				li.header_exchange_item
+					i.icon_info
+			
+
+	// end header_exchange 
+
+
+// end header 
+

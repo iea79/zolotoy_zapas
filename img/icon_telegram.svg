@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="SvgjsSvg1014"
+   version="1.1"
+   width="17"
+   height="18"
+   viewBox="0 0 17 18"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icon_telegram.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>мессенджеры-иконки</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="9.8015267"
+     inkscape:cx="65.143163"
+     inkscape:cy="9.4764782"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SvgjsSvg1014" />
+  <title
+     id="title3">мессенджеры-иконки</title>
+  <desc
+     id="desc5">Created with Avocode.</desc>
+  <defs
+     id="SvgjsDefs1015" />
+  <path
+     id="SvgjsPath1016"
+     d="m 0.35480366,8.6298753 3.89100004,1.4699997 1.506,4.870001 c 0.096,0.31 0.475,0.43 0.727,0.22 l 2.169,-1.78 c 0.228,-0.18 0.551,-0.19 0.789,-0.02 l 3.9120003,2.86 c 0.269,0.2 0.651,0.05 0.719,-0.28 l 2.865,-13.8800007 c 0.074,-0.35 -0.275,-0.65 -0.614,-0.52 l -15.96900034,6.2 c -0.394,0.15 -0.391,0.71 0.005,0.86 z m 5.15400004,0.69 7.6050003,-4.72 c 0.136,-0.08 0.277,0.1 0.16,0.21 L 6.9978037,10.689876 c -0.221,0.2 -0.363,0.48 -0.404,0.78 l -0.213,1.6 c -0.029,0.21 -0.326,0.23 -0.384,0.02 l -0.822,-2.910001 c -0.095,-0.3299997 0.043,-0.6799997 0.334,-0.8599997 z"
+     inkscape:connector-curvature="0"
+     style="fill:#f3f6f7;fill-opacity:1"
+     sodipodi:nodetypes="ccccccccccccccccccccc" />
+</svg>
