@@ -1600,8 +1600,27 @@ input[type=checkbox]:disabled:indeterminate:before {
 			}
 		}
 		&_rek {
+			position: relative;
+			overflow: hidden;
+			&_title {
+				font-size: 18px;
+				line-height: 20px;
+				text-transform: uppercase;
+				position: relative;
+				z-index: 2;
+				padding: 14px 19px;
+				max-width: 200px;
+				min-height: 113px;
+			}
 			img {
+				position: absolute;
+				z-index: 1;
 				display: block;
+				top: 0;
+				min-height: 100%;
+				min-width: 100%;
+				width: auto;
+				max-width: none;
 			}
 		}
 	}
@@ -2012,7 +2031,10 @@ input[type=checkbox]:disabled:indeterminate:before {
 				position: absolute;
 				bottom: 0;
 				left: 0;
+				height: auto;
 				width: 100%;
+				min-height: auto;
+				top: initial;
 			}
 		}
 	}
