@@ -141,6 +141,29 @@ $btn_contrast_text_color:                        #fff;
   :-ms-input-placeholder      {@content}  
 }
 
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex($values) {
+	-webkit-box-flex: $values;
+	-moz-box-flex:  $values;
+	-webkit-flex:  $values;
+	-ms-flex:  $values;
+	flex:  $values;
+}
+
+@mixin order($val) {
+	-webkit-box-ordinal-group: $val;  
+	-moz-box-ordinal-group: $val;     
+	-ms-flex-order: $val;     
+	-webkit-order: $val;  
+	order: $val;
+}
 
 // End @mixin and variables
 
@@ -580,19 +603,52 @@ input[type=checkbox]:disabled:indeterminate:before {
 // ------------------------
 .grid {
 	margin-left: -$grid_padding;
-	@include display-flex;
-	@include flex-wrap(wrap);
-	// @include justify-content(flex-start);
+	@include flexbox();
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	// @include flex-wrap(wrap);
+	// @include justify-content(space-between);
 	@extend %clear_all;
 	&__wrapper {
 		padding-left: $grid_padding;
 		padding-bottom: $grid_padding;
-		@include flex(none);
+		@include flex(1 0 auto);
 		// @include align-items(stretch);
 		// @include align-content(stretch);
-		float: left;
+		// float: left;
+		&.width {
+			&_1_1 {
+				// width: 100%;
+				@include flex(1 100%);
+			}
+			&_1_2 {
+				// width: 50%;
+				@include flex(2 50%);
+			}
+			&_1_3 {
+				// width: 33.333%;
+				@include flex(3 33%);
+			}
+			&_1_4 {
+				// width: 25%;
+				@include flex(4 25%);
+			}
+			&_1_5 {
+				// width: 20%;
+				@include flex(5 20%);
+			}
+			&_2_3 {
+				// width: 66.666%;
+				@include flex(6 66%);
+			}
+			&_3_4 {
+				// width: 75%;
+				@include flex(7 75%);
+			}
+		}
 	}
 	&__item {
+		// @include flex(none);
 		&.active {
 			border: 3px solid #ddd;
 		}
@@ -600,27 +656,32 @@ input[type=checkbox]:disabled:indeterminate:before {
 	}
 	&__1 {
 		.grid__wrapper {		
-			width: 100%;
+			// width: 100%;
+			@include flex(1 100%);
 		}
 	}
 	&__2 {
 		.grid__wrapper {		
-			width: 50%;
+			// width: 50%;
+			@include flex(2 50%);
 		}
 	}
 	&__3 {
 		.grid__wrapper {		
-			width: 33.333%;
+			// width: 33.333%;
+			@include flex(3 33%);
 		}
 	}
 	&__4 {
 		.grid__wrapper {		
-			width: 25%;
+			// width: 25%;
+			@include flex(4 25%);
 		}
 	}
 	&__5 {
 		.grid__wrapper {		
-			width: 20%;
+			// width: 20%;
+			@include flex(5 20%);
 		}
 	}
 }
@@ -1480,10 +1541,10 @@ input[type=checkbox]:disabled:indeterminate:before {
 .grid_home_first {
 	&>.grid__wrapper {
 		&:first-child {
-			width: 75.5%;
+			@include flex(1 75%);
 		}
 		&:last-child {
-			width: 24.5%;
+			@include flex(1 24%);
 		}
 	}
 	.sidebar_box {
@@ -1981,10 +2042,10 @@ input[type=checkbox]:disabled:indeterminate:before {
 	.grid_home_first {
 		&>.grid__wrapper {
 			&:first-child {
-				width: 100%;
+				@include flex(1 100%);
 			}
 			&:last-child {
-				width: 100%;
+				@include flex(1 100%);
 			}
 		}
 		.sidebar_box {
@@ -2048,14 +2109,11 @@ input[type=checkbox]:disabled:indeterminate:before {
 			&_box {
 				margin-left: 0;
 				&:first-child {
-					width: 32%;
-					float: left;
-					display: table;
-					height: 100%;
+					@include flex(1 32%);
+					margin-bottom: 20px;
 				}
 				&:nth-child(2) {
-					width: 65.5%;
-					float: right;
+					@include flex(1 65%);
 				}
 				&_subscribe {
 					padding-top: 10px;
@@ -2131,12 +2189,12 @@ input[type=checkbox]:disabled:indeterminate:before {
 			float: left;
 		}
 		.grid__wrapper {
-			width: 50%;
+			@include flex(1 50%);
 			text-align: left;
 		}
 	}
 	.how_work .grid__wrapper {
-		width: 50%;
+		@include flex(1 50%);
 	}
 	.footer {
 		height: auto;
@@ -2144,7 +2202,7 @@ input[type=checkbox]:disabled:indeterminate:before {
 		.grid__wrapper {
 			position: static !important;
 			float: none;
-			width: 100% !important;
+			@include flex(1 100%);
 			max-width: none;
 			text-align: center;
 		}
@@ -2200,7 +2258,7 @@ input[type=checkbox]:disabled:indeterminate:before {
 			margin-top: 8px;
 		}
 		.grid__wrapper {
-			width: 100%;
+			@include flex(1 100%);
 			text-align: left;
 		}
 	}
@@ -2229,21 +2287,21 @@ input[type=checkbox]:disabled:indeterminate:before {
 			padding-bottom: 0;
 		}
 		.sidebar_price_list,.sidebar_box_title {
-			width: 100%;
+			@include flex(1 100%);
 		}
 		.sidebar_box_rek {
 			display: none;
 		}
 	}
 	.box_preview .grid__wrapper {
-		width: 100%;
+		@include flex(1 100%);
 	}
 	.home {
 		.page_content {
 		}
 		.sidebar {
 			&_box {
-				width: 100% !important;
+				@include flex(1 100% !important);
 				&:first-child {
 					margin-bottom: 20px;
 				}
@@ -2281,7 +2339,7 @@ input[type=checkbox]:disabled:indeterminate:before {
 		line-height: 1.5;
 	}
 	.how_work .grid__wrapper {
-		width: 100%;
+		@include flex(1 100%);
 	}
 }
 
