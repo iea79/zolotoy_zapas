@@ -37,13 +37,13 @@ $(document).ready(function() {
     //     });
     // });
 
-    $('.icon_drop_menu').on('click', function() {
-    	event.preventDefault();
+    $('.icon_drop_menu').on('click', function(e) {
+    	e.preventDefault();
     	$('.header_drop').addClass('open');
     });
 
-   	$('.drop_menu .icon_close').on('click', function() {
-   		event.preventDefault();
+   	$('.drop_menu .icon_close').on('click', function(e) {
+   		e.preventDefault();
     	$('.header_drop').removeClass('open');
    	});
 
