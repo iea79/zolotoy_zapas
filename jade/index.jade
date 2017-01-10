@@ -1,6 +1,376 @@
 extends template.jade
 
+append head
+	- var bodyClass = "home";
+
 block title
-	title Home
+	title Главная - #{title}
+
+block precontent
+	.top_slider
+		.slick.slider_image
+			.slider_item(style="background-image: url('img/top_slider.jpg')")
+			.slider_item(style="background-image: url('img/top_slider.jpg')")
+			.slider_item(style="background-image: url('img/top_slider.jpg')")
+
+		.slick.slider_text
+			.slider_item
+				.slider_text_title Ваш личный Золотой Запас  — защита от финансовых потрясений
+				ul.slider_text_list 
+					li Мир на пороге больших перемен;
+					li Ваши деньги в банках не защищены;
+					li Дефолты и конфискации стали реальностью;
+					li Золото сохранит Ваш капитал во все времена!
+			.slider_item
+				.slider_text_title Ваш личный Золотой Запас  — защита от финансовых потрясений
+				ul.slider_text_list
+					li Мир на пороге больших перемен;
+					li Ваши деньги в банках не защищены;
+					li Дефолты и конфискации стали реальностью;
+					li Золото сохранит Ваш капитал во все времена!
+					li Золото сохранит Ваш капитал во все времена!
+			.slider_item
+				.slider_text_title Ваш личный Золотой Запас  — защита от финансовых потрясений
+				ul.slider_text_list
+					li Мир на пороге больших перемен;
+					li Ваши деньги в банках не защищены;
+					li Дефолты и конфискации стали реальностью;
+
+	.container_center
+		h2.h2.text_center Лидеры продаж
+		// begin coin slider 
+		.slick.coin_slider
+
+			.slider_item.coin_box.coin_gold
+				.coin_box_title Георгий Победоносец
+				.coin_box_subtitle золото, 7.78 гр
+				.coin_box_prev
+					.coin_box_prev_left
+						.coin_box_prev_item 1/4 oz
+						.coin_box_prev_item 999
+						.coin_box_prev_item 50R
+					.coin_box_prev_right
+						img(src="img/coin1.png", alt="")
+				.coin_box_sale
+					.coin_box_sale_left
+						.coin_box_sale_tile Покупка
+						.coin_box_sale_price 23 500 
+							span.rub Р
+					.coin_box_sale_right
+						.coin_box_sale_tile Продажа
+						.coin_box_sale_price 22 850 
+							span.rub Р
+				.coin_box_btn
+					button.btn Быстрый просмотр
+
+			.slider_item.coin_box.coin_silver
+				.coin_box_title Орел
+				.coin_box_subtitle серебро, 31.1 гр
+				.coin_box_prev
+					.coin_box_prev_left
+						.coin_box_prev_item 1 oz
+						.coin_box_prev_item 999
+						.coin_box_prev_item 1$
+					.coin_box_prev_right
+						img(src="img/coin2.png", alt="")
+				.coin_box_sale
+					.coin_box_sale_left
+						.coin_box_sale_tile Покупка
+						.coin_box_sale_price 1 650 
+							span.rub Р
+					.coin_box_sale_right
+						.coin_box_sale_tile Продажа
+						.coin_box_sale_price 1 400 
+							span.rub Р
+				.coin_box_btn
+					button.btn Быстрый просмотр
+
+			.slider_item.coin_box.coin_gold
+				.coin_box_title Бизон Баффало
+				.coin_box_subtitle золото, 31.1 гр
+				.coin_box_prev
+					.coin_box_prev_left
+						.coin_box_prev_item 1 oz
+						.coin_box_prev_item 999
+						.coin_box_prev_item 50$
+					.coin_box_prev_right
+						img(src="img/coin3.png", alt="")
+				.coin_box_sale
+					.coin_box_sale_left
+						.coin_box_sale_tile Покупка
+						.coin_box_sale_price 93 000 
+							span.rub Р
+					.coin_box_sale_right
+						.coin_box_sale_tile Продажа
+						.coin_box_sale_price 89 000 
+							span.rub Р
+				.coin_box_btn
+					button.btn Быстрый просмотр
+
+			.slider_item.coin_box.coin_gold
+				.coin_box_title Кленовый лист
+				.coin_box_subtitle золото, 7.78 гр
+				.coin_box_prev
+					.coin_box_prev_left
+						.coin_box_prev_item 1 oz
+						.coin_box_prev_item 999
+						.coin_box_prev_item 50C
+					.coin_box_prev_right
+						img(src="img/coin4.png", alt="")
+				.coin_box_sale
+					.coin_box_sale_left
+						.coin_box_sale_tile Покупка
+						.coin_box_sale_price 92 500 
+							span.rub Р
+					.coin_box_sale_right
+						.coin_box_sale_tile Продажа
+						.coin_box_sale_price 88 000 
+							span.rub Р
+				.coin_box_btn
+					button.btn Быстрый просмотр
+
+			.slider_item.coin_box.coin_gold
+				.coin_box_title Георгий Победоносец
+				.coin_box_subtitle золото, 7.78 гр
+				.coin_box_prev
+					.coin_box_prev_left
+						.coin_box_prev_item 1/4 oz
+						.coin_box_prev_item 999
+						.coin_box_prev_item 50R
+					.coin_box_prev_right
+						img(src="img/coin1.png", alt="")
+				.coin_box_sale
+					.coin_box_sale_left
+						.coin_box_sale_tile Покупка
+						.coin_box_sale_price 23 500 
+							span.rub Р
+					.coin_box_sale_right
+						.coin_box_sale_tile Продажа
+						.coin_box_sale_price 22 850 
+							span.rub Р
+				.coin_box_btn
+					button.btn Быстрый просмотр
+		// end coin slider 
+		
+		a.view_more_coin смотреть все монеты
 
 block content
+	// begin grid_
+	.grid.grid_home_first
+		.grid__wrapper
+			// begin how_work 
+			.how_work
+				
+				h2.h2 Как это работает?
+
+				// begin grid_how_work
+				.grid.grid__3
+					.grid__wrapper
+						.how_work_item
+							a.icon_info
+							.how_work_img
+								img(src="img/how1.png", alt="")
+							.how_work_descript
+								span.how_work_number 1
+								span.how_work_text Выбираете монеты и оформляете заявку
+							.how_work_overlay
+								.how_work_descript
+									span.how_work_number 1
+									span.how_work_text Сделка
+								.how_work_overlay_text
+									ul.list_disc
+										li Подписываете документы о совершении сделки
+										li Производите оплату или сдаете монеты 
+											span.text_danger *
+										li Получаете монеты или деньги
+										li.list_item_attention Оплата может быть произведена предварительно банковским переводом. 
+
+
+					.grid__wrapper
+						.how_work_item
+							a.icon_info
+							.how_work_img
+								img(src="img/how2.png", alt="")
+							.how_work_descript
+								span.how_work_number 2
+								span.how_work_text Приезжаете в удобное время для сделки
+							.how_work_overlay
+								.how_work_descript
+									span.how_work_number 2
+									span.how_work_text Сделка
+								.how_work_overlay_text
+									ul.list_disc
+										li Подписываете документы о совершении сделки
+										li Производите оплату или сдаете монеты 
+											span.text_danger *
+										li Получаете монеты или деньги
+										li.list_item_attention Оплата может быть произведена предварительно банковским переводом. 
+
+
+					.grid__wrapper
+						.how_work_item
+							a.icon_info
+							.how_work_img
+								img(src="img/how3.png", alt="")
+							.how_work_descript
+								span.how_work_number 3
+								span.how_work_text Оформляете и совершаете сделку
+							.how_work_overlay
+								.how_work_descript
+									span.how_work_number 3
+									span.how_work_text Сделка
+								.how_work_overlay_text
+									ul.list_disc
+										li Подписываете документы о совершении сделки
+										li Производите оплату или сдаете монеты 
+											span.text_danger *
+										li Получаете монеты или деньги
+										li.list_item_attention Оплата может быть произведена предварительно банковским переводом. 
+
+
+				// end grid_how_work
+
+		.grid__wrapper
+			.sidebar_box
+				.sidebar_box_title
+					h4.h4 Отпускные цены ЦБ РФ
+					.sidebar_box_subtitle на 10 сентября 2016
+				ul.sidebar_price_list
+					li.sidebar_price_list_row
+						span.sidebar_price_list_item Георгий Победоносец золото, 7.78 гр
+						span.sidebar_price_list_item 23 474.84  ↓
+						i.sidebar_price_list_tooltip -100.34
+					li.sidebar_price_list_row
+						span.sidebar_price_list_item Георгий Победоносец серебро, 31.1 гр
+						span.sidebar_price_list_item 45 639.10  ↓
+						i.sidebar_price_list_tooltip -100.34
+					li.sidebar_price_list_row
+						span.sidebar_price_list_item Сочи золото, 7.78 гр
+						span.sidebar_price_list_item 23 474.84  ↓
+						i.sidebar_price_list_tooltip -100.34
+					li.sidebar_price_list_row
+						span.sidebar_price_list_item Сочи золото, 15.55 гр
+						span.sidebar_price_list_item 45 639.10  ↓
+						i.sidebar_price_list_tooltip -100.34
+					li.sidebar_price_list_row
+						span.sidebar_price_list_item Сочи серебро, 31.1 гр
+						span.sidebar_price_list_item 2 025.23  ↓
+						i.sidebar_price_list_tooltip -100.34
+				.sidebar_box_rek
+					img(src="img/forex.jpg", alt="")
+
+	// end grid
+
+	// begin page_content 
+	.page_content
+		
+		// begin box_preview
+		.box_preview
+			.grid.grid_preview
+				.grid__wrapper.width_2_3
+					.grid__item.box_silver
+						h2.h2.title_icon Золотые инвестиционные монеты
+							.icon_chart
+						.box_preview_body
+							.video_wrapper
+							.box_preview_short
+								p Золотые монеты — это простой, надёжный и выгодный способ инвестирования в физическое золото. <b>Инвестиционным золотом</b> считаются золотые монеты, проба которых начинается с 900. Большинство современных золотых монет имеет пробу 999 (или содержание золота 99.9%). Самая высокая проба золота монет
+							.box_preview_more составляет 999,9. Достижение стопроцентной частоты золота является невозможным. Небольшой процент примесей в разных монетах составляют разные металлы (серебро, медь и пр.).
+								p <b>Вес стандартных золотых монет составляет от 1/4 до 1 тройской унции</b> (1 oz = примерно 31.1 грамм). 
+								p Вес монет, предназначенных для инвестирования, начинается с 1 тройской унции (1 oz). Монеты весом в одну тройскую унцию — это самый распространённый способ инвестирования во мире, поэтому дальнейшая перепродажа таких монет не представляет трудности. Поскольку именно 1 oz является стандартной мерой веса инвестиционного золота, то такие монеты пользуются самым высоким спросом на рынке, а после распродажи тиража многие из них приобретают и нумизматическую ценность.  В нашей стране более широкое хождение имеют монеты весом 1/4 тройской унции, в числе которых, в частности — золотая монета <a href="#">Георгий Победоносец</a>.
+								p Если самым распространенным и выгодным объектом инвестирования среди современных монет являются монеты весом начиная с 1 тройской унции, то исторические золотые монеты возможно приобрести за небольшую комиссионную плату при весе начиная с 2.9 грамм.
+						.box_preview_footer
+							a.more_detailed(href="#") подробнее
+							a.close_detailed(href="#") скрыть
+							a.open_detailed_link(href="#") читать полностью
+				.grid__wrapper.width_1_3
+					.grid__item.box_gold
+						h3.h3.title_icon Монетарный депозит
+							.icon_seif
+						.box_preview_body
+							.video_wrapper
+							.box_preview_short
+								p Мы принимаем Ваши золотые монеты <b>Георгий Победоносец</b> по договору займа и выплачиваем <b>0.5%</b> от депозита <b>ежемесячно</b> в <b>монетах</b> или в денежном эквиваленте, по 
+							.box_preview_more
+						.box_preview_footer
+							a.more_detailed(href="#") подробнее
+							a.close_detailed(href="#") скрыть
+							a.open_detailed_link(href="#") читать полностью
+				.grid__wrapper.width_1_3
+					.grid__item.box_gold
+						h3.h3.title_icon Почему золото?
+							.icon_coin
+						.box_preview_body
+							.video_wrapper
+							.box_preview_short
+								p Золото, будучи <b>наиболее ликвидным*</b> из физических товаров, на протяжении практически всей истории человеческой цивилизации, играло роль денег.  Золото и сегодня является формой денег, причем — денег «наивысшей пробы». 
+								p Процитируем Алана Гринспена, бывшего Председателя Федеральной Резервной
+							.box_preview_more
+						.box_preview_footer
+							a.more_detailed(href="#") подробнее
+							a.close_detailed(href="#") скрыть
+							a.open_detailed_link(href="#") читать полностью
+				.grid__wrapper.width_1_3
+					.video_wrapper
+						h4.h4 Характеристики и качество монет
+						img(src="img/prev1.jpg", alt="")
+
+					.box_danger
+						p Регистрация дает возможность оперативного бронирования монет по <b>текущей цене.</b> По любым вопросам звоните по тел. <b>8 499 553-08-82</b>.
+
+				.grid__wrapper.width_1_3
+					.grid__item.box_silver
+						h3.h3.title_icon Почему монеты?
+							.icon_gold
+						.box_preview_body
+							.video_wrapper
+							.box_preview_short
+								p Монеты бывают инвестиционные, и памятные и юбилейные. 
+								p Памятные и юбилейные монеты считаются изделиями из золота и облагаются НДС также как золотые слитки. Кроме того, они выпускаются ограниченным тиражом, что автоматически повышает их ценность, и увы — стоимость. Если Вы не нумизмат, то большого смысла переплачивать нет.
+							.box_preview_more 
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						.box_preview_footer
+							a.more_detailed(href="#") подробнее
+							a.close_detailed(href="#") скрыть
+							a.open_detailed_link(href="#") читать полностью
+
+		// end box_preview
+		
+	// end page_content 
+
+	// begin sidebar 
+	aside.sidebar
+		
+		// Sidebar box 2
+		.sidebar_box
+			.sidebar_box_title.sidebar_box_title_success
+				h4.h4 Новости рынка
+			.sidebar_box_body
+				.sidebar_box_body_date 17.07.16
+				.sidebar_box_body_title.
+					ЦБ выпускает в обращение 8 видов серебряных памятных монет
+				.sidebar_box_body_text.
+					Банк России 31 мая выпускает в обращение восемь видов памятных серебряных монет, сообщается...
+				a.more_detailed(href="#") все новости рынка
+
+		// Sidebar box 3
+		.sidebar_box
+			.sidebar_box_title.sidebar_box_title_success
+				h4.h4 Новости компании
+			.sidebar_box_body
+				.sidebar_box_body_date 16.07.16
+				.sidebar_box_body_title.
+					Банк «ГЛОБЭКС» и «Золотой запас» расширяют сеть филиалов
+				.sidebar_box_body_text.
+					Уважаемые дамы и господа, рады сообщить вам, об открытии услуги «Монетарный счет» 
+				a.more_detailed(href="#") все новости компании
+			// begin sidebar_box_subscribe 
+			.sidebar_box_subscribe
+				.sidebar_box_subscribe_label Подписаться на новости
+				.sidebar_box_subscribe_field
+					input(type="text" placeholder="Ваш e-mail")
+					button.btn Ok
+			// end sidebar_box_subscribe 
+
+	// end sidebar 

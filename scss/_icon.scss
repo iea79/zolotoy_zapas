@@ -1,50 +1,79 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?g8jp2g');
-    src:  url('../fonts/icomoon.eot?g8jp2g#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?g8jp2g') format('truetype'),
-        url('../fonts/icomoon.woff?g8jp2g') format('woff'),
-        url('../fonts/icomoon.svg?g8jp2g#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vue0xr');
+  src:  url('../fonts/icomoon.eot?vue0xr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vue0xr') format('truetype'),
+    url('../fonts/icomoon.woff?vue0xr') format('woff'),
+    url('../fonts/icomoon.svg?vue0xr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-[class^="icon_"], [class*="icon_ "] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+[class^="icon_"], [class*=" icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  &:hover {
+      text-decoration: none;
+  }
 }
 
+.icon_totop:before {
+  content: "\e908";
+}
 .icon_fb:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon_google:before {
-    content: "\e901";
+  content: "\e901";
 }
 .icon_skype:before {
-    content: "\e902";
+  content: "\e902";
 }
 .icon_tel:before {
-    content: "\e903";
+  content: "\e903";
 }
 .icon_telegram:before {
-    content: "\e904";
+  content: "\e904";
 }
 .icon_tweet:before {
-    content: "\e905";
+  content: "\e905";
 }
 .icon_watsapp:before {
-    content: "\e906";
+  content: "\e906";
 }
 .icon_info:before {
-    content: "\e907";
+  content: "\e907";
+}
+
+// Custom
+.icon_chart {
+  &:before {
+    content: image-url('chart.svg');
+  }
+}
+.icon_seif {
+  &:before {
+    content: image-url('seif.svg');
+  }
+}
+.icon_coin {
+  &:before {
+    content: image-url('money.svg');
+  }
+}
+.icon_gold {
+  &:before {
+    content: image-url('gold.svg');
+  }
 }

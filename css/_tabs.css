@@ -6,7 +6,7 @@ Use "@extend %clear_a !optional" if the extend should be able to fail.
 
 Backtrace:
 /home/iea/www/zz/scss/_tabs.scss:3
-/home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/extend.rb:61:in `block in check_extends_fired!'
+/home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/tree/visitors/extend.rb:65:in `block in check_extends_fired!'
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/util/subset_map.rb:105:in `block in each_value'
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/util/subset_map.rb:105:in `each'
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/sass-3.4.20/lib/sass/util/subset_map.rb:105:in `each_value'
@@ -26,6 +26,7 @@ Backtrace:
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/compass-1.0.3/bin/compass:44:in `call'
 /home/iea/Prepros-linux-64/resources/app/ruby/ruby_gems/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
 /home/iea/Prepros-linux-64/resources/app/ruby/loader.rb:15:in `load'
 /home/iea/Prepros-linux-64/resources/app/ruby/loader.rb:15:in `<main>'
